@@ -13,7 +13,7 @@ use App\Http\Controllers\Backend\Mchinawbk\FilterWordController as MchinawbkCont
 /*
  * All route names are prefixed with 'admin.'.
  */
-Route::redirect('/', '/admin/dashboard', 301);
+Route::redirect('/', '/dashboard', 301);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::group(['namespace' => 'nccne', 'prefix' => 'nccne', 'as' => 'nccne.'], function() {
